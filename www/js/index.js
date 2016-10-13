@@ -20,7 +20,7 @@ var launched_count = 0;
 		alert("device ready");
         
 		document.addEventListener("resume", onResume, false); //listens for the "resume" event upon resuming the application
-		document.addEventListener("pause", onPause, false); //listens for the "pause" event and defines what the application will be doing at this time
+		document.addEventListener("pause", onPause, false); //listens for the "pause" event
 		
 		launched_count++;
 		updateDisplay();
