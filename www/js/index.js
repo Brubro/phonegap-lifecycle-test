@@ -3,7 +3,7 @@ var resumed_count = 0;
 var launched_count = 0;
 
     function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
+        document.addEventListener("deviceready", onDeviceReady, false); //listens for the event "deviceready"
 		console.log("device ready");
     }
 	
@@ -19,8 +19,8 @@ var launched_count = 0;
     function onDeviceReady() {
 		alert("device ready");
         
-		document.addEventListener("resume", onResume, false);
-		document.addEventListener("pause", onPause, false);
+		document.addEventListener("resume", onResume, false); //listens for the "resume" event upon resuming the application
+		document.addEventListener("pause", onPause, false); //listens for the "pause" event and defines what the application will be doing at this time
 		
 		launched_count++;
 		updateDisplay();
